@@ -11,6 +11,7 @@
 		19270BE11F9F3AAD00CF9DE4 /* VideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19270BE01F9F3AAD00CF9DE4 /* VideoVC.swift */; };
 		19270BE31F9FC0AB00CF9DE4 /* PartyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19270BE21F9FC0AB00CF9DE4 /* PartyCell.swift */; };
 		19270BE51F9FC36D00CF9DE4 /* PartyRock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19270BE41F9FC36D00CF9DE4 /* PartyRock.swift */; };
+		1932DA771FA04D7900F58C03 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1932DA761FA04D6400F58C03 /* MapKit.framework */; };
 		199A7E0F1F9F2838009334FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199A7E0E1F9F2838009334FC /* AppDelegate.swift */; };
 		199A7E111F9F2838009334FC /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199A7E101F9F2838009334FC /* MainVC.swift */; };
 		199A7E141F9F2838009334FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 199A7E121F9F2838009334FC /* Main.storyboard */; };
@@ -23,6 +24,7 @@
 		19270BE01F9F3AAD00CF9DE4 /* VideoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoVC.swift; sourceTree = "<group>"; };
 		19270BE21F9FC0AB00CF9DE4 /* PartyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartyCell.swift; sourceTree = "<group>"; };
 		19270BE41F9FC36D00CF9DE4 /* PartyRock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartyRock.swift; sourceTree = "<group>"; };
+		1932DA761FA04D6400F58C03 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		199A7E0B1F9F2838009334FC /* PartyRock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PartyRock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		199A7E0E1F9F2838009334FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		199A7E101F9F2838009334FC /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
@@ -37,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1932DA771FA04D7900F58C03 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,11 +54,20 @@
 			path = Files;
 			sourceTree = "<group>";
 		};
+		1932DA751FA04D6300F58C03 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1932DA761FA04D6400F58C03 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		199A7E021F9F2838009334FC = {
 			isa = PBXGroup;
 			children = (
 				199A7E0D1F9F2838009334FC /* PartyRock */,
 				199A7E0C1F9F2838009334FC /* Products */,
+				1932DA751FA04D6300F58C03 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};

@@ -166,15 +166,31 @@
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
                             </wkWebView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fgj-eX-9NX">
+                                <rect key="frame" x="5" y="269" width="365" height="76"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="76" id="J2L-rP-s4p"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="StillTime-Regular" family="Still Time" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="fgj-eX-9NX" firstAttribute="leading" secondItem="ox0-hp-StQ" secondAttribute="leading" constant="5" id="VHb-Ad-Y2o"/>
                             <constraint firstItem="OWf-Jf-iyL" firstAttribute="top" secondItem="AGY-BV-GKc" secondAttribute="top" id="ZuF-gE-3i0"/>
+                            <constraint firstItem="ox0-hp-StQ" firstAttribute="trailing" secondItem="fgj-eX-9NX" secondAttribute="trailing" constant="5" id="haH-eg-KHy"/>
                             <constraint firstItem="OWf-Jf-iyL" firstAttribute="leading" secondItem="ox0-hp-StQ" secondAttribute="leading" id="lw3-hX-hsP"/>
+                            <constraint firstItem="fgj-eX-9NX" firstAttribute="top" secondItem="OWf-Jf-iyL" secondAttribute="bottom" constant="50" id="quI-HX-etz"/>
                             <constraint firstItem="OWf-Jf-iyL" firstAttribute="trailing" secondItem="ox0-hp-StQ" secondAttribute="trailing" id="yCb-Th-uA0"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ox0-hp-StQ"/>
                     </view>
+                    <connections>
+                        <outlet property="titleLbl" destination="fgj-eX-9NX" id="bh6-pk-gtu"/>
+                        <outlet property="webView" destination="OWf-Jf-iyL" id="pEj-rD-Ses"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zZf-j7-lcP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
